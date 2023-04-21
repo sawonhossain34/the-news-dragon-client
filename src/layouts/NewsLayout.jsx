@@ -7,18 +7,14 @@ import StartNav from '../pages/Shared/StartNav/StartNav';
 import { Outlet } from 'react-router-dom';
 
 
-
-const Main = () => {
+const NewsLayout = () => {
     return (
         <div>
             <Header></Header>
 
             <Container>
                 <Row>
-                    <Col lg={3}>
-                        <StartNav></StartNav>
-                    </Col>
-                    <Col lg={6}><Outlet></Outlet></Col>
+                    <Col lg={9}><Outlet></Outlet></Col>
                     <Col lg={3}>
                         <RightNav></RightNav>
                     </Col>
@@ -29,4 +25,4 @@ const Main = () => {
     );
 };
 
-export default Main;
+export default NewsLayout;
