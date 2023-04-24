@@ -5,6 +5,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import RightNav from '../pages/Shared/RightNav/RightNav';
 import StartNav from '../pages/Shared/StartNav/StartNav';
 import { Outlet } from 'react-router-dom';
+import NavigationBar from '../pages/Shared/NavigationBar/NavigationBar';
 
 
 
@@ -12,7 +13,7 @@ const Main = () => {
     return (
         <div>
             <Header></Header>
-
+            <NavigationBar></NavigationBar>
             <Container>
                 <Row>
                     <Col lg={3}>
